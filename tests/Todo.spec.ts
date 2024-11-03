@@ -1,6 +1,6 @@
 import {expect, test} from '@playwright/test'
 import {faker} from '@faker-js/faker'
-import registerPage from '../Pages/registerPage';
+import RegisterPage from '../Pages/registerPage';
 import TodoPage from '../Pages/TodoPage';
 
 
@@ -19,7 +19,7 @@ test ("should be able to add todo item" , async ({page, request}) => {
        console.log(response.json()); 
    // ui steps 
  // read from registerpage
- const registerpage = new registerPage(page);
+ const registerpage = new RegisterPage(page);
  await registerpage.load();
  await registerpage.register();
   // read from todopage
@@ -46,7 +46,7 @@ test ("should be able to delete todo item", async({page}) => {
 
 
   
-  const registerpage = new registerPage(page);
+  const registerpage = new RegisterPage(page);
   await registerpage.load();
   await registerpage.register();
   const todoPage = new TodoPage (page);
