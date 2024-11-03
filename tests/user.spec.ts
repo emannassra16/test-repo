@@ -14,6 +14,5 @@ test ("should be able to sign up" , async ({page}) => {
 const todoPage = new TodoPage (page);
 const WelcomeMessage = todoPage.getWelcomeMessage();
 await expect(WelcomeMessage).toBeVisible();
-
 });
 

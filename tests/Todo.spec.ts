@@ -4,7 +4,7 @@ import RegisterPage from '../Pages/registerPage';
 import TodoPage from '../Pages/TodoPage';
 
 
-test ("should be able to add todo item" , async ({page, request}) => {
+test("should be able to add todo item" , async ({page, request}) => {
     // define request
  
  // register by API!
@@ -42,10 +42,7 @@ await todoPage.addtodoitem();
      expect(item1).toEqual('Playright1');
 */
 
-test ("should be able to delete todo item", async({page}) => {
-
-
-  
+test("should be able to delete todo item", async({page}) => {
   const registerpage = new RegisterPage(page);
   await registerpage.load();
   await registerpage.register();
@@ -57,10 +54,8 @@ test ("should be able to delete todo item", async({page}) => {
   await todoPage.load2();
   await todoPage.clickdeleteitem();
   await todoPage.getnotodomessage();
-
+});
       
-
-   
   /* steps by UI 
     await page.goto('./signup');
     await page.type('[data-testid="first-name"]',faker.person.firstName());
@@ -79,5 +74,5 @@ test ("should be able to delete todo item", async({page}) => {
     await expect(notodomessage).toBeVisible(); */
 
 
-});
+
 
