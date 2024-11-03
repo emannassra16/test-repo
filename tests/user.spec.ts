@@ -15,5 +15,5 @@ const todoPage = new TodoPage (page);
 const WelcomeMessage = todoPage.getWelcomeMessage();
 await expect(WelcomeMessage).toBeVisible();
 
-})
+});
 
