@@ -1,6 +1,6 @@
 import {expect, test} from '@playwright/test'
 import {faker} from '@faker-js/faker'
-import RegisterPage from '../Pages/registerPage';
+import RegisterPage from '../Pages/RegisterPage';
 import TodoPage from '../Pages/TodoPage';
 
 
